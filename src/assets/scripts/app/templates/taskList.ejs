@@ -1,0 +1,50 @@
+<h1>Task List Generator</h1>
+<div id="flash_message"></div>
+
+<div id="main-content">
+  <div id='task-list-display'>
+
+
+    <h2 class="task-step-instructions">Step 1: Enter basic task information</h2>
+
+    <div id="add-task-info-form">
+      <input type="text" class="add-task-title" value="Enter a task title">
+      <br/>
+      <input type="text" class="add-task-description" value="Enter a task description">
+      <br/>
+      <a class='mygov-button add-task-title' href='#'>Get started</a>
+    </div>
+
+    <ul id='mygov-task-list'>
+    </ul>
+
+  </div>
+
+<div id="add-tasks-form">
+  <input type="text" class="add-task-item" value="Add another task item">
+  <textarea class="add-task-item-description" rows="4" cols="50" value="Write a description">Please write a description</textarea>
+  <br/>
+
+  <div id="add-link">
+    <label><input type="checkbox" class="add-task-item-link">Add a link</label><br/>
+    <div id="add-task-item-link-form">
+      <table>
+        <tr><td>Link Name:</td><td><input type="text" class="add-task-item-link-name"></td></tr>
+        <tr><td>Link URL:</td><td><input type="text" class="add-task-item-link-url"></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <a class='mygov-button add-task-item' href='#'>Add to my task list</a>
+  &nbsp;&nbsp;
+  <a href='#' class="add-completed">I'm done adding tasks</a>
+</div>
+
+  <div id="save-tasks-form">
+    <a class='mygov-button save-all-tasks' href='#'>I'm finished! Save my task list</a>
+    &nbsp;&nbsp;
+    <a href='#' class="add-more-tasks">Add more</a>
+  </div>
+</div>
+
+<div id="main-nav"></div>

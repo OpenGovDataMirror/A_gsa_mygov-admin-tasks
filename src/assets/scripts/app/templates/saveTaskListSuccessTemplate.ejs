@@ -1,0 +1,25 @@
+<h1>Task List Generator</h1>
+
+<div id='task-list-display'>
+
+  <h2 class="task-step-instructions">Your task list has been created!</h2>
+
+
+  <strong><%= taskList['name'] %></strong>
+
+  <% _.each(taskItems, function(taskItem){%>
+    <ul>
+      <li>
+        <%= taskItem['name'] %><br/>
+        <%= taskItem['description'] %>
+
+        <% if (taskItem['links_attributes'] && taskItem['links_attributes'].length > 0) { %>
+          <% _.each(taskItem['links_attributes'], function(link) { %>
+            <br/><a href="<%= link['url'] %>"><%= link['name'] %></a>
+          <% }); %>
+        <% } %>
+      </li>
+    </ul>
+  <% }); %>
+
+</div>

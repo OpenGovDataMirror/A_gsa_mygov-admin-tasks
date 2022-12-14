@@ -1,0 +1,215 @@
+body {
+  background-color: #0f2136;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+  background: url('../../../images/mygov-avatar-med.png');
+  background-repeat: no-repeat;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 65px;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+a, h2 {
+  color: #1e6687;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding-bottom: 0;
+}
+
+#container {
+  width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+}
+
+#task-list-display {
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 10px;
+}
+
+ul#mygov-task-list {
+  padding-left:0 ;
+}
+
+ul#mygov-task-list li {
+  border-radius: 5px;
+  list-style: none;
+  line-height: 1.5em;
+  padding: 5px 5px 5px 15px;
+  margin-bottom: 4px;
+  background-color: #f7f7f7;
+}
+
+ul#mygov-task-list li:hover {
+  background-color: #e8f8c0;
+  color: #50593b;
+}
+
+#add-tasks-form {
+  display: none;
+}
+
+#add-tasks-form textarea {
+  font-weight: normal;
+  background-color: #fff;
+}
+
+#add-link {
+  font-size: .75em;
+}
+
+#add-task-item-link-form {
+  display: none;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#add-task-item-link-form table {
+  min-width: 100px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#add-task-item-link-form input {
+  font-weight: normal;
+}
+
+input.add-task-item, input.add-task-title, input.add-task-description {
+  padding-left: 7px;
+  margin-bottom: 7px;
+  font-size: .90em;
+  width: 500px;
+  font-style: italic;
+  font-weight: normal;
+  color: a1a3a6;
+  border-radius: 3px;
+}
+
+a.add-task-item {
+  margin-top: 15px;
+}
+
+span.task-edit input {
+  background: none;
+  font-weight: normal;
+  font-style: italic;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-size: 1.25em;
+}
+
+input.task-button {
+  font-size: 1.5em;
+}
+
+li span.task-item-name {
+  display: inline-block;
+  width: 475px;
+}
+
+li span.edit-task-items.inactive a{
+  color: #ccc;
+}
+
+li span.task-details a, li span.task-edit {
+  font-size: 0.8em;
+}
+
+span.edit-task-items {
+  padding-left: 7px;
+}
+span.edit-task-items a {
+  padding-right: 7px;
+}
+
+.mygov-button {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 0;
+  line-height: 18px;
+  color: #666666;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: -ms-linear-gradient(bottom, #dddddd 0%, #f9f9f9 100%);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#dddddd));
+  background-image: -webkit-linear-gradient(bottom, #dddddd 0%, #f9f9f9 100%);
+  background-image: -o-linear-gradient(bottom, #dddddd 0%, #f9f9f9 100%);
+  background-image: linear-gradient(bottom, #dddddd 0%, #f9f9f9 100%);
+  background-image: -moz-linear-gradient(bottom, #dddddd 0%, #f9f9f9 100%);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+}
+
+.mygov-button:hover {
+  background-color: #dddddd;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+  text-decoration: none;
+}
+
+.mygov-button:active {
+  background-color: #dddddd;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-image: none;
+}
+
+#save-tasks-form, h3.task-title-display {
+  display: none;
+}
+
+span.task-edit {
+  display: none;
+}
+
+span.task-wrapper {
+  display:block;
+}
+
+#basic-task-item-details {
+  display:none;
+}
+
+#flash_message .error{
+  border:2px solid #E64848;
+  background-color: #FFDFDF;
+  margin:3px 0;
+  color: #222;
+  display: block;
+  padding: 8px 12px;
+}
+
+
